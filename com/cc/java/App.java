@@ -8,6 +8,8 @@ public class App {
         HoneyBee queen = new Queen();
         HoneyBee drone = new Drone();
 
+        Bird bird = new Bird();
+
         output(worker.doYourJob());
         output(queen.doYourJob());
         output(drone.doYourJob());
@@ -18,7 +20,12 @@ public class App {
         output(worker.fly());
         output(queen.fly());
         output(drone.fly());
+        output(bird.fly());
 
+        output("----------------");
+
+        output("------ Birds --------");
+        output(bird.hasFeathers());
     }
 
     public static void output(String outputStr) {
